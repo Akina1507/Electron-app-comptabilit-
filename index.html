@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Gestion de comptes application</title>
+  </head>
+  <body>
+    <h2>Gestion de comptes</h2>
+    <h4>Tableau de bord</h4>
+    
+    <button onclick="loadPage2()">Aller à la page 2</button>
+  <p id="info"></p>
+  </body>
+  <script>
+    const { remote } = require('electron');
+    const { loadPage2 } = remote.require('./index');
+  </script>
+  <script src="./renderer.js"></script>
+</html>

@@ -1,2 +1,1 @@
-# Electron-app-comptabilit-
-Gestion de comptes 
+# Electron-app
